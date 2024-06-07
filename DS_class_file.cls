@@ -34,8 +34,9 @@
     pdfauthor={},
     pdfsubject={},
     pdfkeywords={},
-    colorlinks=false,           % no lik border color
-    allbordercolors=white       % white border color for all
+    colorlinks=true,           % no lik border color
+    allbordercolors=white,       % white border color for all
+    allcolors=pblue
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
