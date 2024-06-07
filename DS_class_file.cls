@@ -227,14 +227,14 @@
               $}
             & \cvsite\\}
             %& \href{http://\cvsite}{\cvsite} \\}
-      \ifthenelse{\equal{\cvwebsite}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{-2.5mm} \huge \textnormal{\textcolor{test}{\faInternetExplorer}}
-              \end{array}
-              $}
-            % fo
-            & \href{https://\cvwebsite}{\cvwebsite} \\}
+      % \ifthenelse{\equal{\cvwebsite}{}}{}{
+      %       {$
+      %         \begin{array}{l}
+      %         \hspace{-2.5mm} \huge \textnormal{\textcolor{test}{\faInternetExplorer}}
+      %         \end{array}
+      %         $}
+      %       % fo
+      %       & \href{https://https://\cvwebsite.github.io/ds-resume/}{\cvwebsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
