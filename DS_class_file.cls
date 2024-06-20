@@ -7,7 +7,15 @@
 %-----------------------------------------------------------------------	-----------------
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[sfdefault]{ClearSans}
+% fonts: biolinum, 
+%% Use this reference for using different fonts from latex font catelogue https://www.tug.org/FontCatalogue/sansseriffonts.html
+\usepackage[T1]{fontenc}
+\usepackage{Gudea}
+% \usepackage[sfdefault,thin,medium]{josefin}
+% \RequirePackage[default]{lexend}
+% \RequirePackage[default]{lxfonts}
+% \RequirePackage[sfdefault]{ClearSans}
+
 
 \def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
 
@@ -103,8 +111,20 @@
 % --------------------------------------------------------------------------------------
 % 	FONTS
 %-------------------------------------------------------------------------------------
-\newfontfamily\headingfont[Path = ]{segoeuib.ttf}
+%% Using fontspec package
+% \usepackage{fontspec}
+% \setmainfont{EBGaramond-VariableFont_wght.ttf}
+% \setmainfont{EB Garamond}
 
+
+\newfontfamily\headingfont[Path = ]{segoeuib.ttf}
+% \newfontfamily\headingfont[Path = ]{EBGaramond-VariableFont_wght.ttf}
+
+% \usepackage[utf8]{inputenc}
+% \usepackage{ebgaramond}
+
+% \usepackage{garamondx}
+% \usepackage{CormorantGaramond}
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR DEFINITIONS
 %----------------------------------------------------------------------------------------
@@ -129,6 +149,7 @@
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\cvwebsite}[1]{\renewcommand{\cvwebsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}} % about me
+\newcommand{\competencies}[1]{\renewcommand{\competencies}{#1}}
 %New------------------------------------------------
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 %New------------------------------------------------
@@ -272,7 +293,11 @@
     %------------------------------------------------
     \vspace{0.2mm}
     
-    % \profilesection{\color{headercolor}Capabilities}{0.0cm}
+    \profilesection{\color{headercolor}Competencies}{0.0cm}
+    \vspace{1.0mm}
+    \competencies
+    %------------------------------------------------
+    \vspace{0.2mm}
 
 % 	\hspace{-5mm}\yetenek
         
@@ -342,12 +367,12 @@
 }
 
 \newcommand{\twentyitem}[6]{%
-	#1&\parbox[t]{0.83\textwidth}{%
+	#1&\parbox[t]{0.88\textwidth}{%
 		\textbf{#3}% 
 		\hfill%
 		{\footnotesize#4}%
         }\\%
-    #2&\parbox[t]{0.83\textwidth}{%
+    #2&\parbox[t]{0.88\textwidth}{%
 		\ifblank{#5}{}{#5 \\}
 		#6%
 	}\\
