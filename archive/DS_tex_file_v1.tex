@@ -3,89 +3,32 @@
 %----------------------------------------------------------------------------------------
 \documentclass[letterpaper]{DS_class_file} % a4paper for A4
 
-% Command for Displaying technical skills in 2nd page
-\techskills{
-    % \justifying
-    
-    % \profilesection{\color{headercolor}}{Tech Skills}
-    
-    \vspace{0.7cm}
-    
-    {\large \textbf{\color{headercolor}Programming Languages}} 
-
-    Python, R, Scala, C\#, C++, Shell
-
-    {\large \textbf{\color{headercolor} Exploratory Data Analysis}} 
-
-    Jupyter Notebook, R Markdown
-
-    {\large \textbf{\color{headercolor} Statistical Modelling}} 
-
-    Linear Regression, Logistical Regression
-
-    {\large \textbf{\color{headercolor} Machine Learning}} 
-
-    Decision Trees, Gradient Boosting (XGBoost), Random Forest, KNN, K-means, Bayesian Networks, Causal Discovery %Isolation Forest
-
-    {\large \textbf{\color{headercolor} Deep Learning Architectures}} 
-
-    Multilayer Perceptrons (MLP), AutoEncoder, GPT
-    
-    {\large \textbf{\color{headercolor} Machine Learning Libraries}} 
-
-    TensorFlow, PyTorch, Scikit-learn, Keras, NumPy, Pandas, PyArgum
-
-    {\large \textbf{\color{headercolor} Data Visualization}} 
-
-    PowerBI, Streamlit, Dash
-
-    {\large \textbf{\color{headercolor} Mathematics}} 
-
-    Statistics, Probability, Linear-Algebra, Calculus
-
-    {\large \textbf{\color{headercolor} Big Data}} 
-
-    Spark, Airflow, Zeppelin
-
-    {\large \textbf{\color{headercolor} DevOps}} 
-
-    Docker, Kubernetes, Azure CI/CD pipeline
-
-    {\large \textbf{\color{headercolor} Data Storage}} 
-
-    Azure blob storage, Minio (S3), PostgresDB, ArangoDB, InfluxDB
-
-    {\large \textbf{\color{headercolor} Operating Systems}} 
-
-    Linux, Windows
+% Command for printing skill overview bubbles
+\newcommand\mllibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~~Data~~~~~~~},
+        \textbf{~~~~~PyTorch~~~~~},
+        \textbf{~~~~pyAgrum~~~~},
+        \textbf{~~~~causal~~~~}\\\textbf{~~~~-learn~~~~},
+        \textbf{~~~~Keras~~~~},
+	  \textbf{~~~~~Scikit~~~~~~}\\\textbf{~~~Learn~~~},
+	  \textbf{~~TensorFlow~~}
+    }
 }
 
-% % Command for printing skill overview bubbles
-% \newcommand\mllibs{ 
-% ~
-% 	\smartdiagram[bubble diagram]{
-%         \textbf{~~~~~~~Data~~~~~~~},
-%         \textbf{~~~~~PyTorch~~~~~},
-%         \textbf{~~~~pyAgrum~~~~},
-%         \textbf{~~~~causal~~~~}\\\textbf{~~~~-learn~~~~},
-%         \textbf{~~~~Keras~~~~},
-% 	  \textbf{~~~~~Scikit~~~~~~}\\\textbf{~~~Learn~~~},
-% 	  \textbf{~~TensorFlow~~}
-%     }
-% }
-
-% \newcommand\pythonlibs{ 
-% ~
-% 	\smartdiagram[bubble diagram]{
-%         \textbf{~~~~~~Python~~~~~~},
-%         \textbf{~~~~~Pandas~~~~~},
-%         \textbf{~~~~~~Numpy~~~~~},
-%         \textbf{~~~~~PyTest~~~~~},
-%         \textbf{~~~~~Multi~~~~~}\\\textbf{~~~~Processing~~~~},
-%         \textbf{~~~~~Requests~~~~},
-%         \textbf{~~~Streamlit~~~}
-%     }
-% }
+\newcommand\pythonlibs{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~~~~~~Python~~~~~~},
+        \textbf{~~~~~Pandas~~~~~},
+        \textbf{~~~~~~Numpy~~~~~},
+        \textbf{~~~~~PyTest~~~~~},
+        \textbf{~~~~~Multi~~~~~}\\\textbf{~~~~Processing~~~~},
+        \textbf{~~~~~Requests~~~~},
+        \textbf{~~~Streamlit~~~}
+    }
+}
 
 
 
@@ -103,27 +46,20 @@
 
 
 
-% % Programming skill bars
-% \programming{
-% {$\textbullet$ Azure $\textbullet$ Airflow $\textbullet$ Scala / 2.5}, 
-% {$\textbullet$ MS Office $\textbullet$ Kubernetes $\textbullet$ DevOps / 3.5}, 
-% {$\textbullet$ Linux $\textbullet$ SQL $\textbullet$ Docker $\textbullet$ Git  / 4.0}, 
-% {$\textbullet$ Python $\textbullet$ LateX $\textbullet$ Markdown / 6.0}}
-% \vspace{10mm}
-% \programminglanguage{{ German (B1 - Intermediate) / 3.5 }, { Kannada (Mother Tongue) / 6}, { Tamil (Mother Tongue) / 6}, { English (Native Language) / 6}}
+% Programming skill bars
+\programming{
+{$\textbullet$ Azure $\textbullet$ Airflow $\textbullet$ Scala / 2.5}, 
+{$\textbullet$ MS Office $\textbullet$ Kubernetes $\textbullet$ DevOps / 3.5}, 
+{$\textbullet$ Linux $\textbullet$ SQL $\textbullet$ Docker $\textbullet$ Git  / 4.0}, 
+{$\textbullet$ Python $\textbullet$ LateX $\textbullet$ Markdown / 6.0}}
+\vspace{10mm}
+\programminglanguage{{ German (B1 - Intermediate) / 3.5 }, { Kannada (Mother Tongue) / 6}, { Tamil (Mother Tongue) / 6}, { English (Native Language) / 6}}
 % Projects text
 %\vspace{15mm}
-\languages{
-    % \justifying
-    % \profilesection{\color{headercolor}}{Languages}
-    \vspace{0.7cm}
-    \begin{itemize}
-    \item \textbf{English}- Advanced User
-    \item \textbf{German} - Working Level
-    \item \textbf{Tamil} - Mother Tongue
-    \item \textbf{Kannada} - Mother Tongue
-    \end{itemize}
-}
+%\languages{
+%		\textbf{English-C1}- Advanced in Listening, Reading, Writing and Speaking.\\
+%        \textbf{Arabic-A2} - Having basic knowledge about Arabic.
+%}
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -132,7 +68,7 @@
 \profilepic{rajesh_cv.png}% My photo is here
 \cvname{\hspace{-0.5cm}Rajesh\newline\newline} % My name.
 \cvsurname{\hspace{-0.6cm}Rajendran} % My surname
-\cvjobtitle{Full-Stack Data Scientist} % \faLineChart My position.
+\cvjobtitle{\hspace{0.05cm}Data Scientist} % My position.
 % title/career
 
 \cvlinkedin{rajesh-rajendran}
@@ -152,7 +88,7 @@
 
 \justifying
 
-A Full-Stack Data Science professional with over 10 years of diverse experience in building software and data products. As a Data Science professional, I excel in all stages of data science project, from ideation to production. My passion lies in driving innovation and creating value through cross-functional collaboration. I am dedicated to continuous improvement and am always eager to push boundaries to achieve excellence.
+As a Data Science professional, I excel in all stages of data science projects, from ideation to production. My passion lies in driving innovation and creating value through cross-functional collaboration. I am dedicated to continuous improvement and am always eager to push boundaries to achieve excellence.
 % Data Science professional with experience working in all stages of data science projects from Ideation to Production. My passion is to bring innovation and value through  cross-functional collaboration. I am an ardent learner who strives for continuous improvement and willing to stretch boundaries to achieve it. 
 
 %scalable, high-performance and robust data solutions to derive insights from large and complex datasets. I have experience on different areas such as Data Engineering, Machine Learning, DevOps and Unit Testing. My passion is to bring innovation and value through  cross-functional collaboration. Acted as a liaison between stakeholders and technical teams. I have experience recruiting and building high-performance teams.
@@ -185,11 +121,9 @@ A Full-Stack Data Science professional with over 10 years of diverse experience 
 \begin{itemize}
     \item Data Science
     \item Machine Learning
-    \item Data/Process Mining
     \item Data Engineering
     \item Software Engineering
     \item Team Building
-    \item Leadership and Mentorship
 \end{itemize}
 }
 
@@ -213,100 +147,80 @@ A Full-Stack Data Science professional with over 10 years of diverse experience 
 
 \begin{twenty}
     \twentyitem
-        {Mar 2023}
+        {May 2023}
 		{Present}
-		{Senior Data Scientist (Full-Stack)}
+		{Senior Data Scientist}
 		{\href{https://www.alstom.com/alstom-india}{\textbf{Alstom Transport}}}
 		{}
 		{\underline{\textbf{Project: Service-Affecting Failure Root Cause Analysis}}
         \vspace{0.1cm} 
         \newline
-        A solution to identify the root-cause of service affecting failures using time-series data in Urban Transit Systems for effective troubleshooting. 
-        %utilizing tools from \textbf{causality}.
+        A solution to identify the root-cause of service affecting failures in Urban Transit Systems for effective troubleshooting. %utilizing tools from \textbf{causality}.
         \begin{itemize}
-        % \item \textbf{As Data Scientist} 
-        % \begin{itemize}
+        \item \textbf{As Data Scientist} 
+        \begin{itemize}
             % \item Defined Data Science methodology for the solution.
             \item Performed \textbf{Causal Discovery} on data-logs to obtain a relationship graph, revealing the underlying causal structure between events and failures.
-            \item Developed a \textbf{Causal model} and applied \textbf{Interventional and Counterfactual} techniques to identify root causes of failure. 
-        % \end{itemize}
-        % \item \textbf{As Data Engineer} 
-        % \begin{itemize}
+            \item Developed a \textbf{Causal model} and applied \textbf{Interventional and Counterfactual} techniques to identify root causes of failure.
+        \end{itemize}
+        \item \textbf{As Data Engineer} 
+        \begin{itemize}
             \item Created and deployed end-end \textbf{Data pipeline} for \textbf{Data Ingestion, Data Processing (Cleaning, Transformation), and Data Visualization}.
             \item Created and deployed a \textbf{web-based pedagogical tool} to share results with stakeholders.
-        % \end{itemize}
-        \newline \textbf{Impact}: Reduced troubleshooting time by 86\%.
-        \newline \textbf{Tools \& Technology:} \textit{\tcbox{Causal Discovery} \tcbox{Bayesian Network} \tcbox{Time Series} \tcbox{Data Lake} \tcbox{Machine Learning} \tcbox{Data Pipeline} \tcbox{Kubernetes} \tcbox{PostGres} \tcbox{Docker} \tcbox{DevOps} \tcbox{Data Visualisation}} \tcbox{Data Mining} \tcbox{Process Mining}
-        % \newline \textbf{Tools \& Technology:} \textit{\tcbox{Python}, pyAgrum, causalearn, matplotlib, plotly, D3.js, Kubernetes, Azure DevOps, Minio, PostGres, Azure Blob storage}
+        \end{itemize}
+        \textit{\textbf{Tools \& Technology:} Python, pyAgrum, causalearn, matplotlib, plotly, D3.js, Kubernetes, Azure DevOps, Minio, PostGres, Azure Blob storage}
         \end{itemize}
         }
     \\
     \twentyitem
-		{Jan 2020}
+		{Jun 2021}
 		{May 2023}
-		{Data Scientist (Full-Stack)}
+		{Junior Data Scientist}
 		{\href{https://www.alstom.com/alstom-india}{\textbf{Alstom Transport}}}
 		{}
 		{
         \underline{\textbf{Project: Log Analytics}}
-        % \vspace{0.1cm} 
-        % \newline
-        An Analytical solution for detecting undesirable system behavior from data-logs. It helps system experts by reducing failure detection time by 53\%.
+        \vspace{0.1cm} 
+        \newline
+        An Analytical solution for detecting undesirable system behaviour from data-logs. 
         % Onboard signaling system troubleshooters spend weeks analyzing hundreds of data logs, each containing millions of records, to identify system health deterioration or detect failures. Developed an analytical application utilizes this data to provide train health indicator metrics.
         \begin{itemize}
-        % \item \textbf{As Data Scientist}
-        %     \begin{itemize}
-                \item Worked with system experts to define the \textbf{Health Indicators} to detect the undesirable behavior. Design rules to \textbf{detect erroneous patterns} in the logs 
+        \item \textbf{As Data Scientist}
+            \begin{itemize}
+                \item Worked with system experts to define the \textbf{Health Indicators} to detect the undesirable behaviours. Design rules to \textbf{detect erroneous patterns} in the logs 
                 \item Developed \textbf{PowerBI} dashboards application to help troubleshooters identify unhealthy patterns appearing in data-logs and efficiently navigate through them. Thus reducing the troubleshooting time by 80\%
-        %     \end{itemize}
-        % \item \textbf{As Data Engineer}
-        %     \begin{itemize}
+            \end{itemize}
+        \item \textbf{As Data Engineer}
+            \begin{itemize}
                 \item Developed analytics modules for computing complex health indicators using \textbf{Big-Data} technology
                 \item Automated the end-to-end data pipeline (\textbf{Data Injection, Data Processing (Cleaning, Transformation)}) with \textbf{Apache Airflow}
-            % \end{itemize}
-        \newline \textbf{Tools \& Technology:}\textit{\tcbox{Data Analytics} \tcbox{Big Data}  \tcbox{Spark} \tcbox{Data Lake} \tcbox{Kubernetes} \tcbox{Airflow} \tcbox{Database} \tcbox{Data Visualization} \tcbox{PowerBI}}
-        % \textit{\textbf{Tools \& Technology:} Scala, Spark, Minio, Apache Airflow, Postgres, Azure DevOps, Git, Python, Kubernetes, PowerBI}
+            \end{itemize}
+        \textit{\textbf{Tools \& Technology:} Scala, Spark, Minio, Apache Airflow, Postgres, Azure DevOps, Git, Python, Kubernetes, PowerBI}
         \end{itemize}
         \vspace{0.3cm}
         % \newline 
         \underline{\textbf{Project: Incident Detection}}
-        % \vspace{0.1cm} 
-        % \newline
+        \vspace{0.1cm} 
+        \newline
         A Data-driven troubleshooting solution to detect unhealthy trains from a fleet that needs maintenance. 
         \begin{itemize}
-            \item Developed a \textbf{statistical model} to detect faulty trains from the time-series data-logs generated by train. 
-            \item Packaged solution as executable and \textbf{deployed in Alstom's Fleet management system}. It improved maintenance efficiency by 30\%.
+            \item Developed a \textbf{statistical model} to detect faulty trains from the event data-logs generated by train. 
+            \item Packaged solution as executable and \textbf{deployed in Alstom's Fleet management system}. 
         \end{itemize}
-        \textit{\textbf{Tools \& Technology:} \tcbox{Statistical Learning} \tcbox{Model Deployment}  \tcbox{Unit Testing}}
-        % \textit{\textbf{Tools \& Technology:} Python, pyinstaller, Numpy, Pandas}
+        \textit{\textbf{Tools \& Technology:} Python, pyinstaller, Numpy, Pandas}
         \vspace{0.3cm}
-        % \newline 
-        \underline{\textbf{Anomaly detection}}
-        % \vspace{0.1cm} 
-        % \newline
-        \begin{itemize}
-            \item \textbf{Project: Odometry} Developed a solution based on \textbf{Autoencoder} architecture to detect anomalies in the train's odometry system using time-series data, to ensure efficient and effective maintenance. Model performed with high recall (over 99\%)
+        \newline 
+        \underline{\textbf{Project: Anomaly detection in Odometry system}}
+        \vspace{0.1cm} 
+        \newline
+        A solution to detect anomalies in the train's odometry system to ensure efficient and effective maintenance.
         % Based on data captured by onboard odometry system in train, we developed a solution to detect anomalies in the train's axle speed and ensure efficient and effective maintenance.
-      %       \begin{itemize}
-      %           \item Developed algorithm using \textbf{Autoencoder} architecture that detected anomalies with high Recall (over 99\%)
-    		% \end{itemize}
-            % \textit{\textbf{Tools \& Technology}: \tcbox{Deep Learning} \tcbox{Unsupervised} \tcbox{Tensorflow} \tcbox{PyTorch}}
-            % \textit{\textbf{Tools \& Technology}: Python, Autoencoder, Tensorflow, Keras, Numpy, Dash}
-            % \vspace{0.3cm}
-            % \newline 
-            % \item \underline{\textbf{Project: EbiCab Anomaly Detection}}
-        % \vspace{0.1cm} 
-        % \newline
-        % The EBICab is onboard signalling system responsible for safety-critical operations in train. 
-            \item \textbf{Project: Ebicab} Developed two unsupervised anomaly detection methods based on \textbf{Autoencoder and textual transformer} that detects the variable deviation, explaining the presence of a train software failure in time-series data coming from train's ATC subsystem. Conducted a comparative analysis of both methods and documented the findings in a technical report. The solution is able to identify failures not detected by rule based approach.
-            % An anomaly detection solution for identifying the anomalous behavior from highly unstructured data-logs. 
-      %       \begin{itemize}
-      %           \item Developed two unsupervised anomaly detection methods based on \textbf{Autoencoder and textual transformer} methods.Conducted a comparative analysis of both methods and documented the findings in a technical report.
-    		% \end{itemize}
-            \newline \textit{\textbf{Tools \& Technology}: \tcbox{Deep Learning} \tcbox{Transformer} \tcbox{PyTorch} \tcbox{TensorFlow}  \tcbox{LSTM}} \tcbox{Transformer}
-        \end{itemize}
+        \begin{itemize}
+            \item Developed algorithm using \textbf{Autoencoder} architecture that detected anomalies with high Recall (over 99\%)
+		\end{itemize}
+        \textit{\textbf{Tools \& Technology}: Python, Autoencoder, Tensorflow, Keras, Numpy, Dash}
 		}
-		% \\
+		\\
 	% \twentyitem
 	% 	{May 2021}
 	% 	{Dec 2023}
@@ -321,8 +235,26 @@ A Full-Stack Data Science professional with over 10 years of diverse experience 
  %   \item \textbf{Optimized PostGres} query performance by addressing \textbf{inefficiencies in database design}. \newline \textit{\textbf{Stack}}: \textit{Python, Azure-devops, Git, Docker, Kubernetes, Flask, shell script, Scala, Spark, Postgres } 
 	% 	\end{itemize}}
  %    \\
-
-
+	\twentyitem
+		{Sep 2015}
+		{Jul 2021}
+		{Software Designer}
+		{\href{https://www.alstom.com/alstom-india}{\textbf{Alstom Transport}}}
+		{}
+		{ Worked on design and development of \textbf{tools and simulators} for Factory Acceptance Testing of Railway Signalling equipment
+  %       \begin{itemize}
+		% 	\item Designed and developed \textbf{simulators for Factory Acceptance Testing of Railway Signalling equipment}.
+		% 	\item Developed \textbf{track plan creation tool} that allows \textbf{users across globe to collaborate in track plan design and create animations}. \newline \textit{\textbf{Stack}: .Net, MFC, IPC}
+		% \end{itemize}
+        }
+	\\
+	\twentyitem
+		{Jul 2014}
+		{Jul 2015}
+		{Product Engineering Trainee}
+		{\href{}{\textbf{Blue Triangle Innovations}}}
+		{}
+		{}
 	% 	\\
 	% \twentyitem
  %    	{Dec 2012}
@@ -338,43 +270,10 @@ A Full-Stack Data Science professional with over 10 years of diverse experience 
 
 \makeseconda % Print the sidebar
 
-\section{\faCogs Industrial Experience}
-\begin{twenty}
-	\twentyitem
-		{Sep 2015}
-		{Jan 2020}
-		{Software Designer| Software Architect}
-		{\href{https://www.alstom.com/alstom-india}{\textbf{Alstom Transport}}}
-		{}
-		{ 
-    % Worked on design and development of \textbf{tools and simulators} for Factory Acceptance Testing of Railway Signalling equipment
-  
-  %       \begin{itemize}
-		% 	\item Designed and developed \textbf{simulators for Factory Acceptance Testing of Railway Signalling equipment}.
-		% 	\item Developed \textbf{track plan creation tool} that allows \textbf{users across globe to collaborate in track plan design and create animations}. \newline \textit{\textbf{Stack}: .Net, MFC, IPC}
-		% \end{itemize}
-        }
-	\twentyitem
-		{Jul 2014}
-		{Jul 2015}
-		{Product Engineering Trainee}
-		{\href{}{\textbf{Blue Triangle Innovations}}}
-		{}
-		{}
-   \twentyitem
-		{Dec 2012}
-		{Jun 2014}
-		{Research Assistant}
-		% {\href{https://www.dlr.de/en}{\textbf{German Aerospace Center}}}
-		{\href{}{\textbf{German Aerospace Center}}}
-		{}
-		{}
-\end{twenty}
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
 %----------------------------------------------------------------------------------------
-% \section{\faUniversity Education}
-\section{\faGraduationCap Education}
+\section{\faUniversity Education}
 
 \begin{twenty} % Environment for a list with descriptions
 
@@ -483,7 +382,7 @@ A Full-Stack Data Science professional with over 10 years of diverse experience 
 	{}
 	{}
 	{\begin{itemize}
-        \item Co-authored paper submitted on \textbf{Industrial-Grade Time-Dependent Counterfactual Root Cause Analysis through the Unanticipated Point of Incipient Failure} for the workshop  \href{https://sites.google.com/view/ci4ts2024/home}{Causal Inference for time-series} held during \href{https://www.auai.org/uai2024/workshops}{Uncertainty in Artificial Intelligence} conference held in Barcelona.
+        \item Core contributor in paper submitted on \textbf{CausalAI} on topic \textbf{Industrial-Grade Time-Dependent Counterfactual Root Cause Analysis through the Unanticipated Point of Incipient Failure} to the conference \href{https://sites.google.com/view/ci4ts2024/home}{\textbf{"Causal Inference for time-series"}} held in Barcelona.
 		% \item Paper submitted for \href{https://sites.google.com/view/ci4ts2024/home}{\textbf{"Causal Inference for time-series"}} conference.
         % \item Developed a \textbf{Causal Bayesian Network} model based on synthetic data and knowledge graph. Performed \textbf{Counterfactual analysis} and proved root causes are found at the Point of Incipient failure.    
 	\end{itemize}}

@@ -33,6 +33,9 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
@@ -103,6 +106,13 @@
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
 
+\colorlet{skillhighlight}{lightgray!40!}
+\tcbset{on line, 
+        boxsep=4pt, left=0pt,right=0pt,top=0pt,bottom=0pt,
+        colframe=white,colback=skillhighlight,  
+        highlight math style={enhanced}
+        }
+
 
 \pagestyle{empty} % Disable headers and footers
 
@@ -150,6 +160,7 @@
 \newcommand{\cvwebsite}[1]{\renewcommand{\cvwebsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}} % about me
 \newcommand{\competencies}[1]{\renewcommand{\competencies}{#1}}
+\newcommand{\techskills}[1]{\renewcommand{\techskills}{#1}}
 %New------------------------------------------------
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 %New------------------------------------------------
@@ -189,11 +200,11 @@
 	}
 }
 
-%\newcommand\languages[1]{ 
-%	\renewcommand{\languages}{
-%		{#1}
-%	}
-%}
+\newcommand\languages[1]{ 
+	\renewcommand{\languages}{
+		{#1}
+	}
+}
 
 %----------------------------------------------------------------------------------------
 %  SIDEBAR LAYOUT
@@ -440,7 +451,6 @@
 
 %%% Second page sidebar
 
-
 \newcommand{\makeseconda}{
 
 \begin{tikzpicture}[remember picture,overlay]
@@ -451,41 +461,55 @@
 
 \begin{textblock}{6}(0.55, 0.2)
 			
-		%------------------------------------------------
+%------------------------------------------------
 
-\vspace{0.7cm}
+    \vspace{0.7cm}
+    
+    \profilesection{\color{headercolor}Tech Skills}{0.0cm}
+    
+    \techskills
+    
+    \vspace{0.7cm}
 
-\profilesection{\color{headercolor}ML Libraries}{0.0cm}
-
-\mllibs
-
-\vspace{0.7cm}
-
-{\large \textbf{\color{headercolor}Programming Skills}}
-
-\programming
-
-\vspace{0.7cm}
-
-\profilesection{\color{headercolor}Python Libraries}{0.0cm}
-
-\pythonlibs
-
-\vspace{0.7cm}
-
-{\large \textbf{\color{headercolor}Languages}}
-
-\programminglanguage
-
-\vspace{0.7cm}
-
-% \profilesection{\color{headercolor}Hobies}{0.0cm}
-
-% \hobies
-
-
-
-\renewcommand{\arraystretch}{1.6}
+    \profilesection{\color{headercolor}Languages}{0.0cm}
+    
+    \languages
+    
+    % \competencies
+    
+    % \vspace{0.7cm}
+    
+    % \profilesection{\color{headercolor}ML Libraries}{0.0cm}
+    
+    % \mllibs
+    
+    % \vspace{0.7cm}
+    
+    % {\large \textbf{\color{headercolor}Programming Skills}}
+    
+    % \programming
+    
+    % \vspace{0.7cm}
+    
+    % \profilesection{\color{headercolor}Python Libraries}{0.0cm}
+    
+    % \pythonlibs
+    
+    % \vspace{0.7cm}
+    
+    % {\large \textbf{\color{headercolor}Languages}}
+    
+    % \programminglanguage
+    
+    % \vspace{0.7cm}
+    
+    % \profilesection{\color{headercolor}Hobies}{0.0cm}
+    
+    % \hobies
+    
+    
+    
+    \renewcommand{\arraystretch}{1.6}
 
 
 \end{textblock}
